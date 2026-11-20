@@ -1,1 +1,220 @@
-IyBBVVJBIFB1cnBsZSBIZWFydCBEaWFtb25kIOKAlCAzMHMgdmVydGljYWwgUmVlbCBzY2VuZQojIFN0b3J5Ym9hcmQgYnkgQVBJbmV4IGZyZWUvZ2VtaW5pLTQtaHlkcm9nZW4gKGNvc3QgMCB0b2tlbnMpOyBzY3JpcHQgcmVidWlsdAojIGZyb20gdGhhdCBzdG9yeWJvYXJkIHdpdGggYXhpcy9sYWJlbCBmaXhlcy4gQmxlbmRlciA0LjIsIFotdXAsIGNhbWVyYSBhdCAtWS4KaW1wb3J0IGJweSwgbWF0aCwgcmFuZG9tCnJhbmRvbS5zZWVkKDcpCgpicHkub3BzLm9iamVjdC5zZWxlY3RfYWxsKGFjdGlvbj0nU0VMRUNUJykKYnB5Lm9wcy5vYmplY3QuZGVsZXRlKCkKCnNjZW5lID0gYnB5LmNvbnRleHQuc2NlbmUKc2NlbmUucmVuZGVyLmVuZ2luZSA9ICdDWUNMRVMnCnNjZW5lLmN5Y2xlcy5kZXZpY2UgPSAnQ1BVJwpzY2VuZS5jeWNsZXMuc2FtcGxlcyA9IDE2CnNjZW5lLmN5Y2xlcy51c2VfZGVub2lzaW5nID0gVHJ1ZQpzY2VuZS5yZW5kZXIucmVzb2x1dGlvbl94ID0gMTA4MApzY2VuZS5yZW5kZXIucmVzb2x1dGlvbl95ID0gMTkyMApzY2VuZS5yZW5kZXIuZnBzID0gMzAKc2NlbmUuZnJhbWVfc3RhcnQgPSAxCnNjZW5lLmZyYW1lX2VuZCA9IDcyMCAgIyAyNHMgb2YgQmxlbmRlcjsgc3RpbGxzIG9wZW4vY2xvc2UgM3MgZWFjaCAtPiAzMHMgdG90YWwKc2NlbmUuY3ljbGVzLnVzZV9kZW5vaXNpbmcgPSBUcnVlCnNjZW5lLnJlbmRlci5pbWFnZV9zZXR0aW5ncy5maWxlX2Zvcm1hdCA9ICdQTkcnCnNjZW5lLnJlbmRlci5maWxlcGF0aCA9ICIvL3JlbmRlci8iCgojIFdvcmxkOiBicmlnaHQgYmx1ZQp3b3JsZCA9IGJweS5kYXRhLndvcmxkcy5uZXcoIldvcmxkIikKc2NlbmUud29ybGQgPSB3b3JsZAp3b3JsZC51c2Vfbm9kZXMgPSBUcnVlCndvcmxkLm5vZGVfdHJlZS5ub2Rlc1siQmFja2dyb3VuZCJdLmlucHV0c1swXS5kZWZhdWx0X3ZhbHVlID0gKDAuNzIsIDAuMDQsIDAuMzIsIDEuMCkKd29ybGQubm9kZV90cmVlLm5vZGVzWyJCYWNrZ3JvdW5kIl0uaW5wdXRzWzFdLmRlZmF1bHRfdmFsdWUgPSAxLjAKCmRlZiBwcmluY2lwbGVkKG5hbWUsIGNvbG9yLCByb3VnaD0wLjMsIG1ldGFsbGljPTAuMCwgZW1pc3Npb249Tm9uZSwgZV9zdHJlbmd0aD0wLjApOgogICAgbSA9IGJweS5kYXRhLm1hdGVyaWFscy5uZXcobmFtZSkKICAgIG0udXNlX25vZGVzID0gVHJ1ZQogICAgYiA9IG0ubm9kZV90cmVlLm5vZGVzWyJQcmluY2lwbGVkIEJTREYiXQogICAgYi5pbnB1dHNbIkJhc2UgQ29sb3IiXS5kZWZhdWx0X3ZhbHVlID0gKCpjb2xvciwgMS4wKQogICAgYi5pbnB1dHNbIlJvdWdobmVzcyJdLmRlZmF1bHRfdmFsdWUgPSByb3VnaAogICAgYi5pbnB1dHNbIk1ldGFsbGljIl0uZGVmYXVsdF92YWx1ZSA9IG1ldGFsbGljCiAgICBpZiBlbWlzc2lvbiBpcyBub3QgTm9uZToKICAgICAgICBiLmlucHV0c1siRW1pc3Npb24gQ29sb3IiXS5kZWZhdWx0X3ZhbHVlID0gKCplbWlzc2lvbiwgMS4wKQogICAgICAgIGIuaW5wdXRzWyJFbWlzc2lvbiBTdHJlbmd0aCJdLmRlZmF1bHRfdmFsdWUgPSBlX3N0cmVuZ3RoCiAgICByZXR1cm4gbQoKIyAtLS0tIEZsb29yOiBibHVlL3doaXRlIGNoZWNrZXIsIFo9MCAtLS0tCmJweS5vcHMubWVzaC5wcmltaXRpdmVfcGxhbmVfYWRkKHNpemU9NDAsIGxvY2F0aW9uPSgwLCAwLCAwKSkKZmxvb3IgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0ICAjIGRlZmF1bHQgWFkgcGxhbmUgSVMgdGhlIGZsb29yIChaLXVwKQpmbSA9IGJweS5kYXRhLm1hdGVyaWFscy5uZXcoIkZsb29yX01hdCIpOyBmbS51c2Vfbm9kZXMgPSBUcnVlCm4gPSBmbS5ub2RlX3RyZWUubm9kZXM7IG4uY2xlYXIoKQpvdXQgPSBuLm5ldygiU2hhZGVyTm9kZU91dHB1dE1hdGVyaWFsIik7IGJzZGYgPSBuLm5ldygiU2hhZGVyTm9kZUJzZGZEaWZmdXNlIikKY2hrID0gbi5uZXcoIlNoYWRlck5vZGVUZXhDaGVja2VyIik7IGNoay5pbnB1dHNbM10uZGVmYXVsdF92YWx1ZSA9IDI0LjAKY2hrLmlucHV0c1sxXS5kZWZhdWx0X3ZhbHVlID0gKDAuODUsIDAuMDgsIDAuNDIsIDEuMCkKY2hrLmlucHV0c1syXS5kZWZhdWx0X3ZhbHVlID0gKDEuMCwgMC43MiwgMC44NSwgMS4wKQpmbS5ub2RlX3RyZWUubGlua3MubmV3KGNoay5vdXRwdXRzWzBdLCBic2RmLmlucHV0c1swXSkKZm0ubm9kZV90cmVlLmxpbmtzLm5ldyhic2RmLm91dHB1dHNbMF0sIG91dC5pbnB1dHNbMF0pCmZsb29yLmRhdGEubWF0ZXJpYWxzLmFwcGVuZChmbSkKCiMgLS0tLSBHbG93aW5nIGJhY2tkcm9wIHJlY3RhbmdsZSBiZWhpbmQgYm90dGxlIC0tLS0KYnB5Lm9wcy5tZXNoLnByaW1pdGl2ZV9wbGFuZV9hZGQoc2l6ZT0xLCBsb2NhdGlvbj0oMCwgNS4wLCAyLjUpKQpnbG93ID0gYnB5LmNvbnRleHQuYWN0aXZlX29iamVjdApnbG93LnNjYWxlID0gKDcuMCwgNC4wLCAxLjApCmdsb3cucm90YXRpb25fZXVsZXIgPSAobWF0aC5yYWRpYW5zKDkwKSwgMCwgMCkgICMgWFkgcGxhbmUgLT4gdmVydGljYWwgd2FsbCBmYWNpbmcgY2FtZXJhCmdsb3cuZGF0YS5tYXRlcmlhbHMuYXBwZW5kKHByaW5jaXBsZWQoIkdsb3dfTWF0IiwgKDAuNzUsIDAuOSwgMS4wKSwgcm91Z2g9MS4wLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbWlzc2lvbj0oMS4wLCAwLjU1LCAwLjc1KSwgZV9zdHJlbmd0aD0wLjgpKQoKIyAtLS0tIEJvdHRsZSByaWcgKHBhcmVudCBlbXB0eSBhdCBmbG9vciBjZW50cmUpIC0tLS0KYnB5Lm9wcy5vYmplY3QuZW1wdHlfYWRkKGxvY2F0aW9uPSgwLCAwLCAwKSkKcmlnID0gYnB5LmNvbnRleHQuYWN0aXZlX29iamVjdApyaWcubmFtZSA9ICJCb3R0bGVSaWciCgpidXJndW5keSA9IHByaW5jaXBsZWQoIkJ1cmd1bmR5X0dsYXNzIiwgKDAuMzgsIDAuMDMsIDAuMTApLCByb3VnaD0wLjEyLCBtZXRhbGxpYz0wLjEpCl9iID0gYnVyZ3VuZHkubm9kZV90cmVlLm5vZGVzWyJQcmluY2lwbGVkIEJTREYiXQpfYi5pbnB1dHNbIkNvYXQgV2VpZ2h0Il0uZGVmYXVsdF92YWx1ZSA9IDEuMApfYi5pbnB1dHNbIkNvYXQgUm91Z2huZXNzIl0uZGVmYXVsdF92YWx1ZSA9IDAuMDUKIyBkaWFtb25kLWN1dCBidW1wOiBicmljayB0ZXh0dXJlIHJvdGF0ZWQgNDUgZGVnIGFzIGJ1bXAKYm4gPSBidXJndW5keS5ub2RlX3RyZWUubm9kZXMKYnJpY2sgPSBibi5uZXcoIlNoYWRlck5vZGVUZXhCcmljayIpCmJyaWNrLmlucHV0c1siU2NhbGUiXS5kZWZhdWx0X3ZhbHVlID0gMTAuMApicmljay5pbnB1dHNbIk1vcnRhciBTaXplIl0uZGVmYXVsdF92YWx1ZSA9IDAuMDMKYnVtcCA9IGJuLm5ldygiU2hhZGVyTm9kZUJ1bXAiKTsgYnVtcC5pbnB1dHNbIlN0cmVuZ3RoIl0uZGVmYXVsdF92YWx1ZSA9IDEuMApidXJndW5keS5ub2RlX3RyZWUubGlua3MubmV3KGJyaWNrLm91dHB1dHNbMF0sIGJ1bXAuaW5wdXRzWzJdKQpidXJndW5keS5ub2RlX3RyZWUubGlua3MubmV3KGJ1bXAub3V0cHV0c1swXSwgYm5bIlByaW5jaXBsZWQgQlNERiJdLmlucHV0c1siTm9ybWFsIl0pCgpkZWYgcGFyZW50X3RvX3JpZyhvYmopOgogICAgb2JqLnBhcmVudCA9IHJpZwoKIyBCb2R5OiBiZXZlbGxlZCBib3gsIGRpbXMgMS4wIHggMC41IHggMi4yLCBjZW50cmUgej0xLjEKYnB5Lm9wcy5tZXNoLnByaW1pdGl2ZV9jdWJlX2FkZChzaXplPTEsIGxvY2F0aW9uPSgwLCAwLCAxLjEpKQpib2R5ID0gYnB5LmNvbnRleHQuYWN0aXZlX29iamVjdDsgYm9keS5uYW1lID0gIkJvdHRsZUJvZHkiCmJvZHkuc2NhbGUgPSAoMS4wLCAwLjUsIDIuMikKYnB5Lm9wcy5vYmplY3QudHJhbnNmb3JtX2FwcGx5KGxvY2F0aW9uPUZhbHNlLCByb3RhdGlvbj1GYWxzZSwgc2NhbGU9VHJ1ZSkKYmV2ID0gYm9keS5tb2RpZmllcnMubmV3KCJCZXZlbCIsICdCRVZFTCcpOyBiZXYud2lkdGggPSAwLjA2OyBiZXYuc2VnbWVudHMgPSAzCmJweS5vcHMub2JqZWN0Lm1vZGlmaWVyX2FwcGx5KG1vZGlmaWVyPSJCZXZlbCIpCmJvZHkuZGF0YS5tYXRlcmlhbHMuYXBwZW5kKGJ1cmd1bmR5KQpwYXJlbnRfdG9fcmlnKGJvZHkpCgojIERpYW1vbmQtY3V0IHN0dWRzOiByZWFsIDQtc2lkZWQgcHlyYW1pZHMgb24gZnJvbnQvYmFjayBmYWNlcyBzbyB0aGUKIyBmYWNldHMgY2F0Y2ggbGlnaHQgKGJ1bXAgYWxvbmUgcmVhZHMgZmxhdCBmcm9tIHRoZSBmcm9udCkKZm9yIF9mYWNlLCBfeSwgX3J4IGluICgoImZyb250IiwgLTAuMjYsIG1hdGgucmFkaWFucyg5MCkpLAogICAgICAgICAgICAgICAgICAgICAgICgiYmFjayIsIDAuMjYsIG1hdGgucmFkaWFucygtOTApKSk6CiAgICBmb3IgX2l4IGluICgtMC4zNiwgLTAuMTgsIDAuMCwgMC4xOCwgMC4zNik6CiAgICAgICAgZm9yIF9peiBpbiByYW5nZSg5KToKICAgICAgICAgICAgX3ogPSAwLjE4ICsgX2l6ICogMC4yMQogICAgICAgICAgICBpZiBfZmFjZSA9PSAiZnJvbnQiIGFuZCAwLjk1IDw9IF96IDw9IDEuNTA6CiAgICAgICAgICAgICAgICBjb250aW51ZSAgIyBrZWVwIHRoZSBsYWJlbCBhcmVhIGNsZWFyCiAgICAgICAgICAgIGJweS5vcHMubWVzaC5wcmltaXRpdmVfY29uZV9hZGQodmVydGljZXM9NCwgcmFkaXVzMT0wLjA3NSwgZGVwdGg9MC4wNDUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9jYXRpb249KF9peCwgX3ksIF96KSkKICAgICAgICAgICAgX3MgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0CiAgICAgICAgICAgIF9zLnJvdGF0aW9uX2V1bGVyID0gKF9yeCwgMCwgbWF0aC5yYWRpYW5zKDQ1KSkKICAgICAgICAgICAgX3MuZGF0YS5tYXRlcmlhbHMuYXBwZW5kKGJ1cmd1bmR5KQogICAgICAgICAgICBwYXJlbnRfdG9fcmlnKF9zKQoKIyBOZWNrCmJweS5vcHMubWVzaC5wcmltaXRpdmVfY3lsaW5kZXJfYWRkKHJhZGl1cz0wLjIwLCBkZXB0aD0wLjM1LCBsb2NhdGlvbj0oMCwgMCwgMi4zMikpCm5lY2sgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0OyBuZWNrLm5hbWUgPSAiQm90dGxlTmVjayIKbmVjay5kYXRhLm1hdGVyaWFscy5hcHBlbmQocHJpbmNpcGxlZCgiV2hpdGVfR2xvc3MiLCAoMSwgMSwgMSksIHJvdWdoPTAuMDgpKQpwYXJlbnRfdG9fcmlnKG5lY2spCgojIENhcDogd2hpdGUgc3BoZXJlLCBzbW9vdGgtc2hhZGVkCmJweS5vcHMubWVzaC5wcmltaXRpdmVfdXZfc3BoZXJlX2FkZChyYWRpdXM9MC4zNCwgbG9jYXRpb249KDAsIDAsIDIuNjIpKQpjYXAgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0OyBjYXAubmFtZSA9ICJCb3R0bGVDYXAiCmJweS5vcHMub2JqZWN0LnNoYWRlX3Ntb290aF9ieV9hbmdsZSgpCmNhcC5kYXRhLm1hdGVyaWFscy5hcHBlbmQocHJpbmNpcGxlZCgiQ2FwX1doaXRlIiwgKDEsIDEsIDEpLCByb3VnaD0wLjA1KSkKcGFyZW50X3RvX3JpZyhjYXApCgojIExhYmVsOiB3aGl0ZSBwbGFuZSBvbiBGUk9OVCBmYWNlICh5PS0wLjI2KSwgZmFjaW5nIGNhbWVyYSAoLVkpCmJweS5vcHMubWVzaC5wcmltaXRpdmVfcGxhbmVfYWRkKHNpemU9MSwgbG9jYXRpb249KDAsIC0wLjI2LCAxLjE1KSkKbGFiZWwgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0OyBsYWJlbC5uYW1lID0gIkxhYmVsIgpsYWJlbC5zY2FsZSA9ICgwLjg1LCAwLjYwLCAxLjApCmxhYmVsLnJvdGF0aW9uX2V1bGVyID0gKG1hdGgucmFkaWFucyg5MCksIDAsIDApCmxhYmVsLmRhdGEubWF0ZXJpYWxzLmFwcGVuZChwcmluY2lwbGVkKCJMYWJlbF9XaGl0ZSIsICgxLCAxLCAxKSwgcm91Z2g9MC4yNSkpCnBhcmVudF90b19yaWcobGFiZWwpCgojIExhYmVsIHRleHQgKGZhY2VzIC1ZLCBnbHlwaHMgdXAgPSArWikKZGVmIGFkZF90ZXh0KGJvZHlfdGV4dCwgbG9jLCBzaXplLCBtYXQsIG5hbWUpOgogICAgYnB5Lm9wcy5vYmplY3QudGV4dF9hZGQobG9jYXRpb249bG9jKQogICAgdCA9IGJweS5jb250ZXh0LmFjdGl2ZV9vYmplY3Q7IHQubmFtZSA9IG5hbWUKICAgIHQuZGF0YS5ib2R5ID0gYm9keV90ZXh0CiAgICB0LmRhdGEuYWxpZ25feCA9ICdDRU5URVInOyB0LmRhdGEuYWxpZ25feSA9ICdDRU5URVInCiAgICB0LmRhdGEuc2l6ZSA9IHNpemUKICAgIHQucm90YXRpb25fZXVsZXIgPSAobWF0aC5yYWRpYW5zKDkwKSwgMCwgMCkKICAgIHQuZGF0YS5tYXRlcmlhbHMuYXBwZW5kKG1hdCkKICAgIHJldHVybiB0CgpkYXJrcmVkID0gcHJpbmNpcGxlZCgiVGV4dF9SZWQiLCAoMC4zNSwgMC4wMiwgMC4wOCksIHJvdWdoPTAuMikKbHQgPSBhZGRfdGV4dCgiUFVSUExFIEhFQVJUXG5ESUFNT05EIiwgKDAsIC0wLjI4LCAxLjIyKSwgMC4xMSwgZGFya3JlZCwgIkxhYmVsVGV4dCIpCnBhcmVudF90b19yaWcobHQpCmF0ID0gYWRkX3RleHQoIkFVUkEgUEVSRlVNRSIsICgwLCAtMC4yOCwgMC43MiksIDAuMDksCiAgICAgICAgICAgICAgcHJpbmNpcGxlZCgiVGV4dF9XaGl0ZSIsICgxLCAxLCAxKSwgcm91Z2g9MC4yKSwgIkxhYmVsQnJhbmQiKQpwYXJlbnRfdG9fcmlnKGF0KQoKIyAtLS0tIExpZ2h0cyAtLS0tCmJweS5vcHMub2JqZWN0LmxpZ2h0X2FkZCh0eXBlPSdBUkVBJywgbG9jYXRpb249KDUsIC02LCA3KSkKa2V5ID0gYnB5LmNvbnRleHQuYWN0aXZlX29iamVjdDsga2V5LmRhdGEuZW5lcmd5ID0gMTIwMDsga2V5LmRhdGEuc2hhcGUgPSAnRElTSyc7IGtleS5kYXRhLnNpemUgPSA0CmJweS5vcHMub2JqZWN0LmxpZ2h0X2FkZCh0eXBlPSdQT0lOVCcsIGxvY2F0aW9uPSg0LCAtNCwgMykpCnBpbmsgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0OyBwaW5rLmRhdGEuY29sb3IgPSAoMS4wLCAwLjQ1LCAwLjY1KTsgcGluay5kYXRhLmVuZXJneSA9IDkwMApicHkub3BzLm9iamVjdC5saWdodF9hZGQodHlwZT0nQVJFQScsIGxvY2F0aW9uPSgtNSwgLTQsIDMpKQpmaWxsID0gYnB5LmNvbnRleHQuYWN0aXZlX29iamVjdDsgZmlsbC5kYXRhLmVuZXJneSA9IDUwMDsgZmlsbC5kYXRhLmNvbG9yID0gKDEuMCwgMC42LCAwLjgpCmJweS5vcHMub2JqZWN0LmxpZ2h0X2FkZCh0eXBlPSdBUkVBJywgbG9jYXRpb249KC02LCAtMywgNSkpCnJpbSA9IGJweS5jb250ZXh0LmFjdGl2ZV9vYmplY3Q7IHJpbS5kYXRhLmVuZXJneSA9IDkwMDsgcmltLmRhdGEuY29sb3IgPSAoMS4wLCAwLjg1LCAwLjkpCgojIC0tLS0gQ2FtZXJhICsgdHJhY2stdG8gLS0tLQpicHkub3BzLm9iamVjdC5lbXB0eV9hZGQobG9jYXRpb249KDAsIDAsIDEuMTUpKQp0YXJnZXQgPSBicHkuY29udGV4dC5hY3RpdmVfb2JqZWN0OyB0YXJnZXQubmFtZSA9ICJDYW1UYXJnZXQiCmJweS5vcHMub2JqZWN0LmNhbWVyYV9hZGQobG9jYXRpb249KDAsIC04LjUsIDEuNykpCmNhbSA9IGJweS5jb250ZXh0LmFjdGl2ZV9vYmplY3Q7IGNhbS5uYW1lID0gIkNhbWVyYSIKc2NlbmUuY2FtZXJhID0gY2FtCmNvbiA9IGNhbS5jb25zdHJhaW50cy5uZXcoJ1RSQUNLX1RPJyk7IGNvbi50YXJnZXQgPSB0YXJnZXQKY29uLnRyYWNrX2F4aXMgPSAnVFJBQ0tfTkVHQVRJVkVfWic7IGNvbi51cF9heGlzID0gJ1VQX1knCgpjYW1fa2V5cyA9IFsgICMgZnJhbWUsIGxvY2F0aW9uICAoNiBzaG90cyB4IDRzKQogICAgKDEsICAgKDAsIC04LjUsIDEuNykpLAogICAgKDEyMCwgKDAsIC03LjIsIDEuNikpLAogICAgKDI0MCwgKDIuNSwgLTcuMCwgMS45KSksCiAgICAoMzYwLCAoMCwgLTQuMiwgMS40KSksICAgIyBjbG9zZS11cCBvbiBsYWJlbAogICAgKDQ4MCwgKDAsIC0xMC4wLCAyLjYpKSwgICMgd2lkZQogICAgKDYwMCwgKDAsIC04LjAsIDEuOSkpLAogICAgKDcyMCwgKDAsIC04LjAsIDEuOSkpLApdCmZvciBmLCBsb2MgaW4gY2FtX2tleXM6CiAgICBjYW0ubG9jYXRpb24gPSBsb2MKICAgIGNhbS5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJsb2NhdGlvbiIsIGZyYW1lPWYpCmZvciBmYyBpbiBjYW0uYW5pbWF0aW9uX2RhdGEuYWN0aW9uLmZjdXJ2ZXM6CiAgICBmb3Iga3AgaW4gZmMua2V5ZnJhbWVfcG9pbnRzOgogICAgICAgIGtwLmludGVycG9sYXRpb24gPSAnTElORUFSJwoKIyAtLS0tIEJvdHRsZSByb3RhdGlvbiAxMjEtMjQwICgzNjAgZGVnKSwgaG9sZCBhZnRlciAtLS0tCnJpZy5yb3RhdGlvbl9ldWxlciA9ICgwLCAwLCAwKQpyaWcua2V5ZnJhbWVfaW5zZXJ0KGRhdGFfcGF0aD0icm90YXRpb25fZXVsZXIiLCBmcmFtZT0xMjApCnJpZy5yb3RhdGlvbl9ldWxlciA9ICgwLCAwLCBtYXRoLnJhZGlhbnMoMzYwKSkKcmlnLmtleWZyYW1lX2luc2VydChkYXRhX3BhdGg9InJvdGF0aW9uX2V1bGVyIiwgZnJhbWU9MjQwKQpyaWcua2V5ZnJhbWVfaW5zZXJ0KGRhdGFfcGF0aD0icm90YXRpb25fZXVsZXIiLCBmcmFtZT03MjApCgojIC0tLS0gUGFydGljbGVzOiA4MCBmbG9hdGluZyBzcGFya2xlcyAtLS0tCnNwYXJrX21hdCA9IHByaW5jaXBsZWQoIlNwYXJrIiwgKDEsIDEsIDEpLCByb3VnaD0wLjEsIGVtaXNzaW9uPSgxLjAsIDAuNTUsIDAuNzUpLCBlX3N0cmVuZ3RoPTIuNSkKZm9yIGkgaW4gcmFuZ2UoODApOgogICAgeCA9IHJhbmRvbS51bmlmb3JtKC00LCA0KTsgeSA9IHJhbmRvbS51bmlmb3JtKC0zLCA0KTsgejAgPSByYW5kb20udW5pZm9ybSgwLjIsIDUuNSkKICAgIGJweS5vcHMubWVzaC5wcmltaXRpdmVfaWNvX3NwaGVyZV9hZGQocmFkaXVzPXJhbmRvbS51bmlmb3JtKDAuMDEyLCAwLjAyOCksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvY2F0aW9uPSh4LCB5LCB6MCkpCiAgICBwID0gYnB5LmNvbnRleHQuYWN0aXZlX29iamVjdAogICAgcC5kYXRhLm1hdGVyaWFscy5hcHBlbmQoc3BhcmtfbWF0KQogICAgcC5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJsb2NhdGlvbiIsIGZyYW1lPTEpCiAgICBwLmxvY2F0aW9uID0gKHgsIHksIHowICsgcmFuZG9tLnVuaWZvcm0oMC41LCAxLjUpKQogICAgcC5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJsb2NhdGlvbiIsIGZyYW1lPTM2MCkKICAgIHAua2V5ZnJhbWVfaW5zZXJ0KGRhdGFfcGF0aD0ibG9jYXRpb24iLCBmcmFtZT03MjApCgojIC0tLS0gRW5kIGNhcmQgdGV4dCAodmlzaWJsZSBmcmFtZXMgNjAxLTcyMCBvbmx5KSAtLS0tCmV0MSA9IGFkZF90ZXh0KCJQVVJQTEUgSEVBUlRcbkRJQU1PTkQiLCAoMCwgLTEuMiwgMy45KSwgMC41NSwKICAgICAgICAgICAgICAgcHJpbmNpcGxlZCgiRW5kX1doaXRlIiwgKDEsIDEsIDEpLCByb3VnaD0wLjIpLCAiRW5kVGl0bGUiKQpldDIgPSBhZGRfdGV4dCgiQVVSQSBQRVJGVU1FIiwgKDAsIC0xLjIsIDIuOSksIDAuMzgsCiAgICAgICAgICAgICAgIHByaW5jaXBsZWQoIkVuZF9QaW5rIiwgKDEuMCwgMC40NSwgMC42NSksIHJvdWdoPTAuMiksICJFbmRCcmFuZCIpCmZvciBvYmogaW4gKGV0MSwgZXQyKToKICAgIG9iai5oaWRlX3JlbmRlciA9IFRydWU7IG9iai5oaWRlX3ZpZXdwb3J0ID0gVHJ1ZQogICAgb2JqLmtleWZyYW1lX2luc2VydChkYXRhX3BhdGg9ImhpZGVfcmVuZGVyIiwgZnJhbWU9MSkKICAgIG9iai5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJoaWRlX3ZpZXdwb3J0IiwgZnJhbWU9MSkKICAgIG9iai5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJoaWRlX3JlbmRlciIsIGZyYW1lPTYwMCkKICAgIG9iai5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJoaWRlX3ZpZXdwb3J0IiwgZnJhbWU9NjAwKQogICAgb2JqLmhpZGVfcmVuZGVyID0gRmFsc2U7IG9iai5oaWRlX3ZpZXdwb3J0ID0gRmFsc2UKICAgIG9iai5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJoaWRlX3JlbmRlciIsIGZyYW1lPTYwMSkKICAgIG9iai5rZXlmcmFtZV9pbnNlcnQoZGF0YV9wYXRoPSJoaWRlX3ZpZXdwb3J0IiwgZnJhbWU9NjAxKQoKcHJpbnQoJ1NDRU5FIFJFQURZJykK
+# AURA Purple Heart Diamond — 30s vertical Reel scene
+# Storyboard by APInex free/gemini-4-hydrogen (cost 0 tokens); script rebuilt
+# from that storyboard with axis/label fixes. Blender 4.2, Z-up, camera at -Y.
+import bpy, math, random
+random.seed(7)
+
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete()
+
+scene = bpy.context.scene
+scene.render.engine = 'CYCLES'
+scene.cycles.device = 'CPU'
+scene.cycles.samples = 16
+scene.cycles.use_denoising = True
+scene.render.resolution_x = 1080
+scene.render.resolution_y = 1920
+scene.render.fps = 30
+scene.frame_start = 1
+scene.frame_end = 720  # 24s of Blender; stills open/close 3s each -> 30s total
+scene.cycles.use_denoising = True
+scene.render.image_settings.file_format = 'PNG'
+scene.render.filepath = "//render/"
+
+# World: bright blue
+world = bpy.data.worlds.new("World")
+scene.world = world
+world.use_nodes = True
+world.node_tree.nodes["Background"].inputs[0].default_value = (0.72, 0.04, 0.32, 1.0)
+world.node_tree.nodes["Background"].inputs[1].default_value = 1.0
+
+def principled(name, color, rough=0.3, metallic=0.0, emission=None, e_strength=0.0):
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    b = m.node_tree.nodes["Principled BSDF"]
+    b.inputs["Base Color"].default_value = (*color, 1.0)
+    b.inputs["Roughness"].default_value = rough
+    b.inputs["Metallic"].default_value = metallic
+    if emission is not None:
+        b.inputs["Emission Color"].default_value = (*emission, 1.0)
+        b.inputs["Emission Strength"].default_value = e_strength
+    return m
+
+# ---- Floor: blue/white checker, Z=0 ----
+bpy.ops.mesh.primitive_plane_add(size=40, location=(0, 0, 0))
+floor = bpy.context.active_object  # default XY plane IS the floor (Z-up)
+fm = bpy.data.materials.new("Floor_Mat"); fm.use_nodes = True
+n = fm.node_tree.nodes; n.clear()
+out = n.new("ShaderNodeOutputMaterial"); bsdf = n.new("ShaderNodeBsdfDiffuse")
+chk = n.new("ShaderNodeTexChecker"); chk.inputs[3].default_value = 24.0
+chk.inputs[1].default_value = (0.85, 0.08, 0.42, 1.0)
+chk.inputs[2].default_value = (1.0, 0.72, 0.85, 1.0)
+fm.node_tree.links.new(chk.outputs[0], bsdf.inputs[0])
+fm.node_tree.links.new(bsdf.outputs[0], out.inputs[0])
+floor.data.materials.append(fm)
+
+# ---- Glowing backdrop rectangle behind bottle ----
+bpy.ops.mesh.primitive_plane_add(size=1, location=(0, 5.0, 2.5))
+glow = bpy.context.active_object
+glow.scale = (7.0, 4.0, 1.0)
+glow.rotation_euler = (math.radians(90), 0, 0)  # XY plane -> vertical wall facing camera
+glow.data.materials.append(principled("Glow_Mat", (0.75, 0.9, 1.0), rough=1.0,
+                                       emission=(1.0, 0.55, 0.75), e_strength=0.8))
+
+# ---- Bottle rig (parent empty at floor centre) ----
+bpy.ops.object.empty_add(location=(0, 0, 0))
+rig = bpy.context.active_object
+rig.name = "BottleRig"
+
+burgundy = principled("Burgundy_Glass", (0.38, 0.03, 0.10), rough=0.12, metallic=0.1)
+_b = burgundy.node_tree.nodes["Principled BSDF"]
+_b.inputs["Coat Weight"].default_value = 1.0
+_b.inputs["Coat Roughness"].default_value = 0.05
+# diamond-cut bump: brick texture rotated 45 deg as bump
+bn = burgundy.node_tree.nodes
+brick = bn.new("ShaderNodeTexBrick")
+brick.inputs["Scale"].default_value = 10.0
+brick.inputs["Mortar Size"].default_value = 0.03
+bump = bn.new("ShaderNodeBump"); bump.inputs["Strength"].default_value = 1.0
+burgundy.node_tree.links.new(brick.outputs[0], bump.inputs[2])
+burgundy.node_tree.links.new(bump.outputs[0], bn["Principled BSDF"].inputs["Normal"])
+
+def parent_to_rig(obj):
+    obj.parent = rig
+
+# Body: bevelled box, dims 1.0 x 0.5 x 2.2, centre z=1.1
+bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0, 1.1))
+body = bpy.context.active_object; body.name = "BottleBody"
+body.scale = (1.0, 0.5, 2.2)
+bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+bev = body.modifiers.new("Bevel", 'BEVEL'); bev.width = 0.06; bev.segments = 3
+bpy.ops.object.modifier_apply(modifier="Bevel")
+body.data.materials.append(burgundy)
+parent_to_rig(body)
+
+# Diamond-cut studs: real 4-sided pyramids on front/back faces so the
+# facets catch light (bump alone reads flat from the front)
+for _face, _y, _rx in (("front", -0.26, math.radians(90)),
+                       ("back", 0.26, math.radians(-90))):
+    for _ix in (-0.36, -0.18, 0.0, 0.18, 0.36):
+        for _iz in range(9):
+            _z = 0.18 + _iz * 0.21
+            if _face == "front" and 0.95 <= _z <= 1.50:
+                continue  # keep the label area clear
+            bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=0.075, depth=0.045,
+                                            location=(_ix, _y, _z))
+            _s = bpy.context.active_object
+            _s.rotation_euler = (_rx, 0, math.radians(45))
+            _s.data.materials.append(burgundy)
+            parent_to_rig(_s)
+
+# Neck
+bpy.ops.mesh.primitive_cylinder_add(radius=0.20, depth=0.35, location=(0, 0, 2.32))
+neck = bpy.context.active_object; neck.name = "BottleNeck"
+neck.data.materials.append(principled("White_Gloss", (1, 1, 1), rough=0.08))
+parent_to_rig(neck)
+
+# Cap: white sphere, smooth-shaded
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.34, location=(0, 0, 2.62))
+cap = bpy.context.active_object; cap.name = "BottleCap"
+bpy.ops.object.shade_smooth_by_angle()
+cap.data.materials.append(principled("Cap_White", (1, 1, 1), rough=0.05))
+parent_to_rig(cap)
+
+# Label: white plane on FRONT face (y=-0.26), facing camera (-Y)
+bpy.ops.mesh.primitive_plane_add(size=1, location=(0, -0.26, 1.15))
+label = bpy.context.active_object; label.name = "Label"
+label.scale = (0.85, 0.60, 1.0)
+label.rotation_euler = (math.radians(90), 0, 0)
+label.data.materials.append(principled("Label_White", (1, 1, 1), rough=0.25))
+parent_to_rig(label)
+
+# Label text (faces -Y, glyphs up = +Z)
+def add_text(body_text, loc, size, mat, name):
+    bpy.ops.object.text_add(location=loc)
+    t = bpy.context.active_object; t.name = name
+    t.data.body = body_text
+    t.data.align_x = 'CENTER'; t.data.align_y = 'CENTER'
+    t.data.size = size
+    t.rotation_euler = (math.radians(90), 0, 0)
+    t.data.materials.append(mat)
+    return t
+
+darkred = principled("Text_Red", (0.35, 0.02, 0.08), rough=0.2)
+lt = add_text("PURPLE HEART\nDIAMOND", (0, -0.28, 1.22), 0.11, darkred, "LabelText")
+parent_to_rig(lt)
+at = add_text("AURA PERFUME", (0, -0.28, 0.72), 0.09,
+              principled("Text_White", (1, 1, 1), rough=0.2), "LabelBrand")
+parent_to_rig(at)
+
+# ---- Lights ----
+bpy.ops.object.light_add(type='AREA', location=(5, -6, 7))
+key = bpy.context.active_object; key.data.energy = 1200; key.data.shape = 'DISK'; key.data.size = 4
+bpy.ops.object.light_add(type='POINT', location=(4, -4, 3))
+pink = bpy.context.active_object; pink.data.color = (1.0, 0.45, 0.65); pink.data.energy = 900
+bpy.ops.object.light_add(type='AREA', location=(-5, -4, 3))
+fill = bpy.context.active_object; fill.data.energy = 500; fill.data.color = (1.0, 0.6, 0.8)
+bpy.ops.object.light_add(type='AREA', location=(-6, -3, 5))
+rim = bpy.context.active_object; rim.data.energy = 900; rim.data.color = (1.0, 0.85, 0.9)
+
+# ---- Camera + track-to ----
+bpy.ops.object.empty_add(location=(0, 0, 1.15))
+target = bpy.context.active_object; target.name = "CamTarget"
+bpy.ops.object.camera_add(location=(0, -8.5, 1.7))
+cam = bpy.context.active_object; cam.name = "Camera"
+scene.camera = cam
+con = cam.constraints.new('TRACK_TO'); con.target = target
+con.track_axis = 'TRACK_NEGATIVE_Z'; con.up_axis = 'UP_Y'
+
+cam_keys = [  # frame, location  (6 shots x 4s)
+    (1,   (0, -8.5, 1.7)),
+    (120, (0, -7.2, 1.6)),
+    (240, (2.5, -7.0, 1.9)),
+    (360, (0, -4.2, 1.4)),   # close-up on label
+    (480, (0, -10.0, 2.6)),  # wide
+    (600, (0, -8.0, 1.9)),
+    (720, (0, -8.0, 1.9)),
+]
+for f, loc in cam_keys:
+    cam.location = loc
+    cam.keyframe_insert(data_path="location", frame=f)
+for fc in cam.animation_data.action.fcurves:
+    for kp in fc.keyframe_points:
+        kp.interpolation = 'LINEAR'
+
+# ---- Bottle rotation 121-240 (360 deg), hold after ----
+rig.rotation_euler = (0, 0, 0)
+rig.keyframe_insert(data_path="rotation_euler", frame=120)
+rig.rotation_euler = (0, 0, math.radians(360))
+rig.keyframe_insert(data_path="rotation_euler", frame=240)
+rig.keyframe_insert(data_path="rotation_euler", frame=720)
+
+# ---- Particles: 80 floating sparkles ----
+spark_mat = principled("Spark", (1, 1, 1), rough=0.1, emission=(1.0, 0.55, 0.75), e_strength=2.5)
+for i in range(80):
+    x = random.uniform(-4, 4); y = random.uniform(-3, 4); z0 = random.uniform(0.2, 5.5)
+    bpy.ops.mesh.primitive_ico_sphere_add(radius=random.uniform(0.012, 0.028),
+                                          location=(x, y, z0))
+    p = bpy.context.active_object
+    p.data.materials.append(spark_mat)
+    p.keyframe_insert(data_path="location", frame=1)
+    p.location = (x, y, z0 + random.uniform(0.5, 1.5))
+    p.keyframe_insert(data_path="location", frame=360)
+    p.keyframe_insert(data_path="location", frame=720)
+
+# ---- End card text (visible frames 601-720 only) ----
+et1 = add_text("PURPLE HEART\nDIAMOND", (0, -1.2, 3.9), 0.55,
+               principled("End_White", (1, 1, 1), rough=0.2), "EndTitle")
+et2 = add_text("AURA PERFUME", (0, -1.2, 2.9), 0.38,
+               principled("End_Pink", (1.0, 0.45, 0.65), rough=0.2), "EndBrand")
+for obj in (et1, et2):
+    obj.hide_render = True; obj.hide_viewport = True
+    obj.keyframe_insert(data_path="hide_render", frame=1)
+    obj.keyframe_insert(data_path="hide_viewport", frame=1)
+    obj.keyframe_insert(data_path="hide_render", frame=600)
+    obj.keyframe_insert(data_path="hide_viewport", frame=600)
+    obj.hide_render = False; obj.hide_viewport = False
+    obj.keyframe_insert(data_path="hide_render", frame=601)
+    obj.keyframe_insert(data_path="hide_viewport", frame=601)
+
+print('SCENE READY')
