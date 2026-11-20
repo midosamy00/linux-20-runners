@@ -1,0 +1,61 @@
+name: AURA Reel Render
+# Renders the Purple Heart Diamond 30s vertical Reel (720 Blender frames,
+# 1080x1920, 30fps) split across all 20 devices. The .blend is generated on
+# each runner from renders/aura-purple-heart-reel/build_scene.py, so only
+# text files live in the repo. Push-triggered so a push starts the render.
+on:
+  push:
+    paths:
+      - 'renders/aura-purple-heart-reel/**'
+      - '.github/workflows/aura-reel-render.yml'
+  workflow_dispatch:
+    inputs:
+      total_frames:
+        description: "Total frames to render"
+        required: true
+        default: "720"
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        device: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compute my frame chunk (1/20 of total)
+        id: chunk
+        run: |
+          TOTAL="${{ inputs.total_frames || '720' }}"
+          python3 scripts/split_frames.py --total "$TOTAL" --devices 20 --device "${{ matrix.device }}"
+          echo "start=$(cat /tmp/chunk_start.txt)" >> "$GITHUB_OUTPUT"
+          echo "end=$(cat /tmp/chunk_end.txt)" >> "$GITHUB_OUTPUT"
+      - name: Install Blender
+        run: |
+          BLENDER_VERSION="4.2.3"
+          URL="https://download.blender.org/release/Blender${BLENDER_VERSION%.*}/blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          for i in 1 2 3; do
+            rm -f blender.tar.xz
+            curl -L --retry 3 --retry-delay 5 -o blender.tar.xz "$URL" && SIZE=$(stat -c%s blender.tar.xz) && [ "$SIZE" -gt 100000000 ] && break
+            echo "Download attempt $i failed or too small, retrying..."
+            sleep 5
+          done
+          test -s blender.tar.xz && [ "$(stat -c%s blender.tar.xz)" -gt 100000000 ] || { echo "Blender download failed after 3 attempts"; exit 1; }
+          tar -xf blender.tar.xz
+          echo "$PWD/blender-${BLENDER_VERSION}-linux-x64" >> "$GITHUB_PATH"
+      - name: Generate the .blend from the scene script
+        run: |
+          blender --background --python renders/aura-purple-heart-reel/build_scene.py --python-expr "import bpy; bpy.ops.wm.save_as_mainfile(filepath='renders/aura-purple-heart-reel/aura-purple-heart-reel.blend')"
+          ls -lh renders/aura-purple-heart-reel/
+      - name: Render my chunk (CPU, Cycles)
+        run: |
+          mkdir -p "output/device-${{ matrix.device }}"
+          blender -b "renders/aura-purple-heart-reel/aura-purple-heart-reel.blend" -o "output/device-${{ matrix.device }}/frame_####" -s "${{ steps.chunk.outputs.start }}" -e "${{ steps.chunk.outputs.end }}" -a
+      - name: Upload my frames
+        uses: actions/upload-artifact@v4
+        with:
+          name: aura-frames-device-${{ matrix.device }}-${{ steps.chunk.outputs.start }}-${{ steps.chunk.outputs.end }}
+          path: output/device-${{ matrix.device }}/
+          retention-days: 7
