@@ -45,7 +45,14 @@ jobs:
       - name: Install Blender
         run: |
           BLENDER_VERSION="${{ inputs.blender_version }}"
-          curl -L -o blender.tar.xz "https://download.blender.org/release/Blender${BLENDER_VERSION%.*}/blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          URL="https://download.blender.org/release/Blender${BLENDER_VERSION%.*}/blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          for i in 1 2 3; do
+            rm -f blender.tar.xz
+            curl -L --retry 3 --retry-delay 5 -o blender.tar.xz "$URL" && SIZE=$(stat -c%s blender.tar.xz) && [ "$SIZE" -gt 100000000 ] && break
+            echo "Download attempt $i failed or too small, retrying..."
+            sleep 5
+          done
+          test -s blender.tar.xz && [ "$(stat -c%s blender.tar.xz)" -gt 100000000 ] || { echo "Blender download failed after 3 attempts"; exit 1; }
           tar -xf blender.tar.xz
           echo "$PWD/blender-${BLENDER_VERSION}-linux-x64" >> "$GITHUB_PATH"
       - name: Render my chunk (CPU, no GPU)
