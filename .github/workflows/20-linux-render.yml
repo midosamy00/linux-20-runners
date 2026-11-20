@@ -1,0 +1,60 @@
+name: 20 Linux Render
+on:
+  workflow_dispatch:
+    inputs:
+      blend_file:
+        description: "Path to the .blend file in the repo (e.g. renders/scene.blend)"
+        required: true
+        default: "renders/scene.blend"
+      total_frames:
+        description: "Total frames to render"
+        required: true
+        default: "200"
+      output_dir:
+        description: "Output folder for PNG frames"
+        required: false
+        default: "output"
+      blender_version:
+        description: "Blender version to install"
+        required: false
+        default: "4.2.3"
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        device: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Show this device specs
+        run: |
+          echo "device=${{ matrix.device }} / 20"
+          echo "--- cpu ---"; nproc; lscpu | grep "Model name"
+          echo "--- ram ---"; free -h
+          echo "--- disk ---"; df -h .
+          echo "--- os ---"; uname -a
+      - name: Compute my frame chunk (1/20 of total)
+        id: chunk
+        run: |
+          python3 scripts/split_frames.py --total "${{ inputs.total_frames }}" --devices 20 --device "${{ matrix.device }}"
+          echo "start=$(cat /tmp/chunk_start.txt)" >> "$GITHUB_OUTPUT"
+          echo "end=$(cat /tmp/chunk_end.txt)" >> "$GITHUB_OUTPUT"
+      - name: Install Blender
+        run: |
+          BLENDER_VERSION="${{ inputs.blender_version }}"
+          curl -L -o blender.tar.xz "https://download.blender.org/release/Blender${BLENDER_VERSION%.*}/blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          tar -xf blender.tar.xz
+          echo "$PWD/blender-${BLENDER_VERSION}-linux-x64" >> "$GITHUB_PATH"
+      - name: Render my chunk (CPU, no GPU)
+        run: |
+          mkdir -p "${{ inputs.output_dir }}/device-${{ matrix.device }}"
+          blender -b "${{ inputs.blend_file }}" -o "${{ inputs.output_dir }}/device-${{ matrix.device }}/frame_####" -s "${{ steps.chunk.outputs.start }}" -e "${{ steps.chunk.outputs.end }}" -a
+      - name: Upload my frames
+        uses: actions/upload-artifact@v4
+        with:
+          name: frames-device-${{ matrix.device }}-${{ steps.chunk.outputs.start }}-${{ steps.chunk.outputs.end }}
+          path: ${{ inputs.output_dir }}/device-${{ matrix.device }}/
+          retention-days: 7
